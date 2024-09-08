@@ -1,5 +1,6 @@
-# ft_strjoinでmallocの中身をエラーハンドリングした方がいいかも
+### ft_strjoinでmallocの中身をエラーハンドリングした方がいいかも
 
+```
 char	*ft_strjoin(char *leftover, char *buf)
 {
 	char	*result;
@@ -23,3 +24,7 @@ char	*ft_strjoin(char *leftover, char *buf)
 	ft_strcpy(result + leftover_len, buf);
 	return (result);
 }
+```
+
+2024/09/08
+関数に無駄が多い。ディレクトリ構造にも改善の余地あり。メモリリークについて考えるいい機会だった
